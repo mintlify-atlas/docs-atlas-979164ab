@@ -1,0 +1,203 @@
+{
+  "projectType": "data-platform",
+  "projectName": "Unity Catalog",
+  "projectDescription": "Open, multimodal catalog for data and AI assets with unified governance.",
+  "theme": "aspen",
+  "primaryColor": "#e0ae16",
+  "lightColor": "#193658",
+  "darkColor": "#f49bc9",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "architecture"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/catalogs",
+              "concepts/schemas",
+              "concepts/tables",
+              "concepts/volumes",
+              "concepts/functions",
+              "concepts/models"
+            ]
+          },
+          {
+            "group": "Data Formats",
+            "pages": [
+              "formats/delta-lake",
+              "formats/uniform",
+              "formats/supported-formats"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/server",
+              "deployment/docker",
+              "deployment/configuration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Server & CLI",
+        "groups": [
+          {
+            "group": "Server",
+            "pages": [
+              "server/overview",
+              "server/authentication",
+              "server/google-auth",
+              "server/users-privileges"
+            ]
+          },
+          {
+            "group": "CLI",
+            "pages": [
+              "cli/overview",
+              "cli/catalogs",
+              "cli/schemas",
+              "cli/tables",
+              "cli/volumes",
+              "cli/functions",
+              "cli/models"
+            ]
+          },
+          {
+            "group": "UI",
+            "pages": [
+              "ui/overview"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Query Engines",
+            "pages": [
+              "integrations/duckdb",
+              "integrations/spark",
+              "integrations/trino",
+              "integrations/daft",
+              "integrations/celerdata",
+              "integrations/kuzu",
+              "integrations/puppygraph",
+              "integrations/spiceai",
+              "integrations/xtable"
+            ]
+          },
+          {
+            "group": "AI Frameworks",
+            "pages": [
+              "ai/overview",
+              "ai/quickstart",
+              "ai/client",
+              "ai/integrations/langchain",
+              "ai/integrations/llamaindex",
+              "ai/integrations/openai",
+              "ai/integrations/anthropic",
+              "ai/integrations/gemini",
+              "ai/integrations/litellm",
+              "ai/integrations/autogen",
+              "ai/integrations/crewai"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview"
+            ]
+          },
+          {
+            "group": "Catalog APIs",
+            "pages": [
+              "api/catalogs",
+              "api/schemas",
+              "api/metastores"
+            ]
+          },
+          {
+            "group": "Data Assets",
+            "pages": [
+              "api/tables",
+              "api/volumes",
+              "api/functions"
+            ]
+          },
+          {
+            "group": "AI & ML",
+            "pages": [
+              "api/models",
+              "api/model-versions"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "api/permissions",
+              "api/credentials"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Universal catalog for data and AI assets",
+    "Multi-format support (Delta Lake, Iceberg, Hudi, Parquet)",
+    "Multi-engine compatibility (DuckDB, Spark, Trino)",
+    "Three-level namespace (catalog.schema.table)",
+    "Unified governance and permissions",
+    "ML model registry and versioning",
+    "REST API with OpenAPI specification",
+    "CLI and UI for catalog management",
+    "AI framework integrations (LangChain, LlamaIndex, OpenAI)",
+    "Apache Hive and Iceberg API compatibility"
+  ],
+  "publicApiSurface": [
+    "POST /catalogs - Create catalog",
+    "GET /catalogs - List catalogs",
+    "GET /catalogs/{name} - Get catalog",
+    "PATCH /catalogs/{name} - Update catalog",
+    "DELETE /catalogs/{name} - Delete catalog",
+    "POST /schemas - Create schema",
+    "GET /schemas - List schemas",
+    "GET /schemas/{full_name} - Get schema",
+    "POST /tables - Create table",
+    "GET /tables - List tables",
+    "GET /tables/{full_name} - Get table",
+    "POST /volumes - Create volume",
+    "GET /volumes - List volumes",
+    "POST /functions - Create function",
+    "GET /functions - List functions",
+    "POST /models - Create registered model",
+    "GET /models - List registered models",
+    "POST /model-versions - Create model version",
+    "GET /temporary-table-credentials - Generate temporary credentials",
+    "POST /permissions - Manage permissions",
+    "bin/uc catalog - Catalog CLI commands",
+    "bin/uc schema - Schema CLI commands",
+    "bin/uc table - Table CLI commands",
+    "bin/uc volume - Volume CLI commands",
+    "bin/uc function - Function CLI commands",
+    "bin/uc model - Model CLI commands",
+    "unitycatalog-ai Python package - AI integrations",
+    "UnityCatalogClient - Java/Python SDK"
+  ]
+}
